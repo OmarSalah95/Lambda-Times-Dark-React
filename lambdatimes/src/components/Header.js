@@ -9,6 +9,7 @@ import styled from 'styled-components';
 // Refactor this component to use styled components and not classNames.
 // You can find the corresponding CSS in the CSS/index.css file
 const StyledHeader = styled.div`
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -30,6 +31,7 @@ const StyledHeader = styled.div`
 		text-align: center;
 		color: #000;
 	}
+
 `;
 
 const StyledHeaderText = styled.span`
@@ -55,5 +57,6 @@ const Header = () => {
 		</StyledHeader>
 	);
 };
+
 
 export default Header;

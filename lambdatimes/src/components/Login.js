@@ -12,12 +12,12 @@ const LoginPage = styled.div`
     font-weight: bold;
     flex: 8;
     text-align: center;
-    color: #000;
+    // color: #000;
   }
   p {
     font-size: 20px;
   }
-  
+
   ${props => (props.subH1 ? `font-size:55px;` : null)}
 `;
 const LoginForm = styled.form`
@@ -26,6 +26,10 @@ const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
   text-align: center;
+  background: rgb(12, 11, 11);
+  border-radius: 3px;
+  border: 1px solid crimson;
+  border-bottom: 1px solid lightgrey;
 `;
 const LoginInput = styled.input`
   width: 75%;
@@ -35,7 +39,7 @@ const LoginInput = styled.input`
   text-indent: 15px;
   border-radius: 5px;
   border: 2px solid black;
-  
+  background: lightgrey;
 `;
 const LoginButton = styled.button`
   width: 70%;
@@ -43,7 +47,7 @@ const LoginButton = styled.button`
   border-radius: 8px;
   border: 1px solid black;
   height: 35px;
-  background: white
+  background: lightgrey;
 `;
 
 class Login extends Component {
